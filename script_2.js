@@ -38,7 +38,7 @@ async function getValues() {
             lineTension: "0",
             pointStyle: "circle",
             radius: "0",
-            borderWidth: 3,
+            borderWidth: 4,
             fill: "false",
             shadowOffsetX: 7,
             shadowOffsetY: 7,
@@ -47,6 +47,7 @@ async function getValues() {
         }]
     },
     options: {
+        aspectRatio: 1,
         scales: {
             yAxes: [{
                 ticks: {
@@ -74,7 +75,7 @@ async function getValues() {
             lineTension: "0",
             pointStyle: "circle",
             radius: "0",
-            borderWidth: 3,
+            borderWidth: 4,
             fill: "false",
             shadowOffsetX: 7,
             shadowOffsetY: 7,
@@ -83,6 +84,7 @@ async function getValues() {
         }]
     },
     options: {
+        aspectRatio: 1,
         scales: {
             yAxes: [{
                 ticks: {
@@ -110,7 +112,7 @@ data: {
         lineTension: "0",
         pointStyle: "circle",
         radius: "0",
-        borderWidth: 3,
+        borderWidth: 4,
         fill: "false",
         shadowOffsetX: 7,
         shadowOffsetY: 7,
@@ -119,6 +121,7 @@ data: {
     }]
 },
 options: {
+    aspectRatio: 1,
     scales: {
         yAxes: [{
             ticks: {

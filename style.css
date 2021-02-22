@@ -37,8 +37,8 @@ body {
   display: none;
   position: absolute;
   transform: translate(-50%, 0);
-  width: 90vw;
-  height: 90vw;
+  width: 400px;
+  height: 400px;
   text-align: center;
   line-height: 20px;
   font-size: 12px;
