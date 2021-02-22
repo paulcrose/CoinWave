@@ -1,26 +1,35 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <title>CoinWave</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="main.css">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-style@latest/dist/chartjs-plugin-style.min.js"></script>
-
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div id="canvasFrame">
-    <canvas id="myChart"></canvas>
-</div>
-<div id="container">
-    <p id="value">Change Me</p>
+
+  <div class="swiper-pagination"></div>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">BTC</div>
+        <div class="swiper-slide">ETH</div>
+        <div class="swiper-slide">XRP</div>
+    </div>
+  </div>
+  <div id="credit">
     <a href="https://nomics.com" rel="nofollow">Crypto Market Cap & Pricing Data Provided By Nomics</a>
-</div>
+  </div>
+  
+  <script src="swiper-bundle.js"></script>
+  <script src="script.js"></script>
+  <script src="script_2.js"></script>
 
-
-
-<script type="text/javascript" src="script.js"></script> 
 </body>
+
 </html>
