@@ -110,7 +110,7 @@ data: {
         lineTension: "0",
         pointStyle: "circle",
         radius: "0",
-        borderWidth: 2,
+        borderWidth: 3,
         fill: "false",
         shadowOffsetX: 7,
         shadowOffsetY: 7,
