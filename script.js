@@ -17,4 +17,4 @@ var swiper = new Swiper('.swiper-container', {
         return '<div class="' + className + '"><p id="value' + (index + 1) + '"></p><canvas id="myChart' + (index + 1) + '"></canvas></div>';
       },
     },
-  });
+});
