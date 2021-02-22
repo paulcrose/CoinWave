@@ -61,7 +61,7 @@ canvas {
 
 p {
     position: absolute;
-    transform: translate(0, 100vw);
+    transform: translate(0, 90vw);
     width: 100%;
     color: #00FFDC;
     font-size: 1.5em;

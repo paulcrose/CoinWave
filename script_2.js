@@ -115,7 +115,7 @@ data: {
         shadowOffsetX: 7,
         shadowOffsetY: 7,
         shadowBlur: 20,
-        shadowColor: 'rgba(0,255,220,1)',
+        shadowColor: "rgba(255,0,0,1)",
     }]
 },
 options: {
