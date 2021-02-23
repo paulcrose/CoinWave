@@ -1,16 +1,31 @@
 body {
-  background: rgb(10, 14, 32);
+  background: rgb(161, 161, 161);
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;
   margin: 0;
   padding: 0;
+  
+}
+
+.app-container {
+  position: relative;
+  margin-top: 10vh;
+  height: 80vh;
+  max-height: 640px;
+  border: 5px solid black;
+  box-sizing: border-box;
 }
 
 .swiper-container {
+  z-index: 100;
+  position: absolute;
+  top: auto;
+  bottom: 0;
   width: 100%;
-  margin-top: 65vh;
-  padding-top: 50px;
+  height: 96px;
+  padding: 0;
+  background: rgb(198, 239, 255);
   
 }
 
@@ -18,8 +33,8 @@ body {
   background-position: center;
   background-size: cover;
   background-color: rgb(1, 253, 254);
-  width: 45vw;
-  height: 100px;
+  width: 96px;
+  height: 96px;
   line-height: 100px;
   text-align: center;
   color: black;
@@ -30,7 +45,7 @@ body {
 .swiper-pagination {
   width: 100%;
   position: absolute;
-  top: 10vh;
+  
 }
 
 .swiper-pagination-bullet {
@@ -38,7 +53,9 @@ body {
   position: absolute;
   transform: translate(-50%, 0);
   width: 400px;
+  max-width: 90%;
   height: 400px;
+  max-height: 90vw;
   text-align: center;
   line-height: 20px;
   font-size: 12px;
@@ -59,9 +76,25 @@ canvas {
   margin: 5%;
 }
 
-p {
+.value-position {
     position: absolute;
-    transform: translate(0, 90vw);
+    margin-top: auto;
+    width: 100%;
+    height: 60vh;
+    max-height: 500px;
+    border: 5px solid red;
+    box-sizing: border-box;
+}
+
+.value-container {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+
+}
+
+p {
+    position: relative;
     width: 100%;
     color: #00FFDC;
     font-size: 1.5em;
