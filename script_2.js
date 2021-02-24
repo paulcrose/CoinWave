@@ -9,6 +9,7 @@ yesterday.setDate(yesterday.getDate() - 1);
 const jsonDateToday = today.toJSON();
 const jsonDateYesterday = yesterday.toJSON();
 
+
 console.log(jsonDateToday);
 console.log(jsonDateYesterday);
 
@@ -28,7 +29,15 @@ async function getValues() {
     document.getElementById("value3").innerText = `${data[2].prices[23]}`
 
     console.log(data);
+
     
+    var lineColor;
+    if ((data[0].prices[3])<(data[0].prices[23])) {
+        lineColor = "rgba(0,255,0,1)";
+    } else {
+        lineColor = "rgba(255,0,0,1)";
+    }
+
 
     var ctx = document.getElementById('myChart1').getContext('2d');
     var myChart = new Chart(ctx, {
@@ -38,7 +47,7 @@ async function getValues() {
         datasets: [{
             label: '# of Votes',
             data: priceList,
-            borderColor: "rgba(255,0,0,1)",
+            borderColor: lineColor,
             lineTension: "0",
             pointStyle: "circle",
             radius: "0",
@@ -47,7 +56,7 @@ async function getValues() {
             shadowOffsetX: 7,
             shadowOffsetY: 7,
             shadowBlur: 20,
-            shadowColor: "rgba(255,0,0,1)",
+            shadowColor: lineColor,
         }]
     },
     options: {
@@ -66,6 +75,13 @@ async function getValues() {
         }
     }
 });
+
+    var lineColor2;
+    if ((data[1].prices[3])<(data[1].prices[23])) {
+        lineColor2 = "rgba(0,255,0,1)";
+    } else {
+        lineColor2 = "rgba(255,0,0,1)";
+    }
 
     var ctx = document.getElementById('myChart2').getContext('2d');
     var myChart = new Chart(ctx, {
@@ -75,7 +91,7 @@ async function getValues() {
         datasets: [{
             label: '# of Votes',
             data: priceList2,
-            borderColor: "rgba(255,0,0,1)",
+            borderColor: lineColor2,
             lineTension: "0",
             pointStyle: "circle",
             radius: "0",
@@ -84,7 +100,7 @@ async function getValues() {
             shadowOffsetX: 7,
             shadowOffsetY: 7,
             shadowBlur: 20,
-            shadowColor: "rgba(255,0,0,1)",
+            shadowColor: lineColor2,
         }]
     },
     options: {
@@ -104,44 +120,52 @@ async function getValues() {
     }
 });
 
-var ctx = document.getElementById('myChart3').getContext('2d');
-var myChart = new Chart(ctx, {
-type: 'line',
-data: {
-    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-    datasets: [{
-        label: '# of Votes',
-        data: priceList3,
-        borderColor: "rgba(255,0,0,1)",
-        lineTension: "0",
-        pointStyle: "circle",
-        radius: "0",
-        borderWidth: 4,
-        fill: "false",
-        shadowOffsetX: 7,
-        shadowOffsetY: 7,
-        shadowBlur: 20,
-        shadowColor: "rgba(255,0,0,1)",
-    }]
-},
-options: {
-    aspectRatio: 1,
-    scales: {
-        yAxes: [{
-            ticks: {
-                display: false
-            }
-        }],
-        xAxes: [{
-            ticks: {
-                display: false
-            }
-        }]
+    var lineColor3;
+    if ((data[2].prices[3])<(data[2].prices[23])) {
+        lineColor3 = "rgba(0,255,0,1)";
+    } else {
+        lineColor3 = "rgba(255,0,0,1)";
     }
-}
+
+
+    var ctx = document.getElementById('myChart3').getContext('2d');
+    var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+            label: '# of Votes',
+            data: priceList3,
+            borderColor: lineColor3,
+            lineTension: "0",
+            pointStyle: "circle",
+            radius: "0",
+            borderWidth: 4,
+            fill: "false",
+            shadowOffsetX: 7,
+            shadowOffsetY: 7,
+            shadowBlur: 20,
+            shadowColor: lineColor3,
+        }]
+    },
+    options: {
+        aspectRatio: 1,
+        scales: {
+            yAxes: [{
+                ticks: {
+                    display: false
+                }
+            }],
+            xAxes: [{
+                ticks: {
+                    display: false
+                }
+            }]
+        }
+    }
 });
 
-}
+    }
 
 getValues();
 
