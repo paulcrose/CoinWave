@@ -14,7 +14,7 @@ var swiper = new Swiper('.swiper-container', {
     pagination: {
       el: '.swiper-pagination',
       renderBullet: function (index, className) {
-        return '<div class="' + className + '"><div class="value-position"><div class="value-container"><p id="value' + (index + 1) + '"></p></div></div><canvas id="myChart' + (index + 1) + '"></canvas></div>';
+        return '<div class="' + className + '"><div class="value-container"><p id="value' + (index + 1) + '"></p></div><canvas id="myChart' + (index + 1) + '"></canvas></div>';
       },
     },
 });
