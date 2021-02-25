@@ -24,11 +24,15 @@ async function getValues() {
     const priceList2 = [(data[1].prices[3]),(data[1].prices[7]),(data[1].prices[11]),(data[1].prices[15]),(data[1].prices[19]),(data[1].prices[23])]
     const priceList3 = [(data[2].prices[3]),(data[2].prices[7]),(data[2].prices[11]),(data[2].prices[15]),(data[2].prices[19]),(data[2].prices[23])]
     
-    document.getElementById("value1").innerText = `${data[0].prices[23]}`
-    document.getElementById("value2").innerText = `${data[1].prices[23]}`
-    document.getElementById("value3").innerText = `${data[2].prices[23]}`
-
+    var value1 = (Number(Number(data[0].prices[23]).toFixed(2)).toLocaleString());
+    var value2 = (Number(Number(data[1].prices[23]).toFixed(2)).toLocaleString());
+    var value3 = (Number(Number(data[2].prices[23]).toFixed(2)).toLocaleString());
+    
     console.log(data);
+
+    document.getElementById("value1").innerText = `$${value1}`
+    document.getElementById("value2").innerText = `$${value2}`
+    document.getElementById("value3").innerText = `$${value3}`
 
     
     var lineColor;
