@@ -1,7 +1,15 @@
+
+var direction = 'vertical';
+if (screen.width < 960) {
+  direction = 'horizontal';
+}
+
 var swiper = new Swiper('.swiper-container', {
+    direction: direction,
     loop: true,
     effect: 'coverflow',
     grabCursor: true,
+    mousewheel: true,
     centeredSlides: true,
     slidesPerView: 'auto',
     coverflowEffect: {
@@ -18,3 +26,4 @@ var swiper = new Swiper('.swiper-container', {
       },
     },
 });
+
