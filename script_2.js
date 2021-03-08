@@ -11,12 +11,12 @@ yesterday.setDate(yesterday.getDate() - 1);
 const jsonDateToday = today.toJSON();
 const jsonDateYesterday = yesterday.toJSON();
 
-
 console.log(jsonDateToday);
 console.log(jsonDateYesterday);
 
 const api_url_hist = "https://api.nomics.com/v1/currencies/sparkline?key=1e137867ca2750e7d2d854a3104dea88&ids=BTC,ETH,XRP&start="+jsonDateYesterday+"&end="+jsonDateToday+""
 
+const shadow = "0 -17px 43.9px -20px rgba(255, 0, 15, 0.15), 0 -14.5px 69.3px -20px rgba(255, 0, 15, 0.20), 0 -3.9px 67.7px -20px rgba(255, 0, 15, 0.25), 0 38px 56px -20px rgba(255, 0, 15, 0.32)"
 
 async function getValues() {
     const response = await fetch(api_url_hist);
@@ -39,11 +39,10 @@ async function getValues() {
     
     var lineColor;
     if ((data[0].prices[3])<(data[0].prices[23])) {
-        lineColor = "rgba(0,255,0,1)";
-        document.getElementById("shadow1").style.boxShadow = "12px 12px 2px 1px rgba(0, 0, 255, .5)";
+        lineColor = "rgba(0,255,110,1)";
     } else {
         lineColor = "rgba(255,0,0,1)";
-        
+        document.getElementById("shadow1").style.boxShadow = shadow;
     }
 
     
@@ -85,12 +84,11 @@ async function getValues() {
 });
 
     var lineColor2;
-    if ((data[1].prices[3])<(data[1].prices[23])) {
-        lineColor2 = "rgba(0,255,0,1)";
-        document.getElementById("shadow2").style.boxShadow = "12px 12px 2px 1px rgba(255, 0, 0, .5)";
-        
+    if ((data[1].prices[3])>(data[1].prices[23])) {
+        lineColor2 = "rgba(0,255,110,1)";
     } else {
         lineColor2 = "rgba(255,0,0,1)";
+        document.getElementById("shadow2").style.boxShadow = shadow;
     }
 
     var ctx = document.getElementById('myChart2').getContext('2d');
@@ -132,12 +130,11 @@ async function getValues() {
 
     var lineColor3;
     if ((data[2].prices[3])<(data[2].prices[23])) {
-        lineColor3 = "rgba(0,255,0,1)";
-        document.getElementById("shadow3").style.boxShadow = "12px 12px 2px 1px rgba(255, 0, 0, .5)";
-        
+        lineColor3 = "rgba(0,255,110,1)";
     } else {
         lineColor3 = "rgba(255,0,0,1)";
-        
+        document.getElementById("shadow3").style.boxShadow = shadow;
+
     }
 
 
