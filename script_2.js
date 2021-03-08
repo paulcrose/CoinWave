@@ -39,7 +39,7 @@ async function getValues() {
     
     var lineColor;
     if ((data[0].prices[3])<(data[0].prices[23])) {
-        lineColor = "rgba(0,255,110,1)";
+        lineColor = "rgba(0,255,200,1)";
     } else {
         lineColor = "rgba(255,0,0,1)";
         document.getElementById("shadow1").style.boxShadow = shadow;
@@ -85,7 +85,7 @@ async function getValues() {
 
     var lineColor2;
     if ((data[1].prices[3])>(data[1].prices[23])) {
-        lineColor2 = "rgba(0,255,110,1)";
+        lineColor2 = "rgba(0,255,200,1)";
     } else {
         lineColor2 = "rgba(255,0,0,1)";
         document.getElementById("shadow2").style.boxShadow = shadow;
@@ -130,7 +130,7 @@ async function getValues() {
 
     var lineColor3;
     if ((data[2].prices[3])<(data[2].prices[23])) {
-        lineColor3 = "rgba(0,255,110,1)";
+        lineColor3 = "rgba(0,255,200,1)";
     } else {
         lineColor3 = "rgba(255,0,0,1)";
         document.getElementById("shadow3").style.boxShadow = shadow;
