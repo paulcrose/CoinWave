@@ -1,3 +1,5 @@
+
+
 Chart.defaults.global.legend.display = false;
 Chart.defaults.scale.gridLines.display = false;
 
@@ -38,11 +40,13 @@ async function getValues() {
     var lineColor;
     if ((data[0].prices[3])<(data[0].prices[23])) {
         lineColor = "rgba(0,255,0,1)";
+        document.getElementById("shadow1").style.boxShadow = "12px 12px 2px 1px rgba(0, 0, 255, .5)";
     } else {
         lineColor = "rgba(255,0,0,1)";
+        
     }
 
-
+    
     var ctx = document.getElementById('myChart1').getContext('2d');
     var myChart = new Chart(ctx, {
     type: 'line',
@@ -83,6 +87,8 @@ async function getValues() {
     var lineColor2;
     if ((data[1].prices[3])<(data[1].prices[23])) {
         lineColor2 = "rgba(0,255,0,1)";
+        document.getElementById("shadow2").style.boxShadow = "12px 12px 2px 1px rgba(255, 0, 0, .5)";
+        
     } else {
         lineColor2 = "rgba(255,0,0,1)";
     }
@@ -127,8 +133,11 @@ async function getValues() {
     var lineColor3;
     if ((data[2].prices[3])<(data[2].prices[23])) {
         lineColor3 = "rgba(0,255,0,1)";
+        document.getElementById("shadow3").style.boxShadow = "12px 12px 2px 1px rgba(255, 0, 0, .5)";
+        
     } else {
         lineColor3 = "rgba(255,0,0,1)";
+        
     }
 
 
