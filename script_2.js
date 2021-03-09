@@ -32,9 +32,9 @@ async function getValues() {
     
     console.log(data);
 
-    document.getElementById("value1").innerText = `$${value1}`
-    document.getElementById("value2").innerText = `$${value2}`
-    document.getElementById("value3").innerText = `$${value3}`
+    document.getElementById("value1").innerText = `1 BTC = $${value1}`
+    document.getElementById("value2").innerText = `1 ETC = $${value2}`
+    document.getElementById("value3").innerText = `1 XRP = $${value3}`
 
     var percent1 = ((((data[0].prices[23]) - (data[0].prices[3])) / (data[0].prices[23]))*100).toFixed(2);
     var percent2 = ((((data[1].prices[23]) - (data[1].prices[3])) / (data[1].prices[23]))*100).toFixed(2);
@@ -62,9 +62,9 @@ async function getValues() {
         }
     }
 
-    document.getElementById("percent1").innerText = `BTC 1 Day ${sign1}${percent1}%`
-    document.getElementById("percent2").innerText = `ETH 1 Day ${sign2}${percent2}%`
-    document.getElementById("percent3").innerText = `XRP 1 Day ${sign3}${percent3}%`
+    document.getElementById("percent1").innerText = `1 Day ${sign1}${percent1}%`
+    document.getElementById("percent2").innerText = `1 Day ${sign2}${percent2}%`
+    document.getElementById("percent3").innerText = `1 Day ${sign3}${percent3}%`
 
     console.log(percent1);
     console.log(percent2);
