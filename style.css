@@ -9,7 +9,7 @@ html {
 body {
   position: relative;
   background-color: rgb(0, 0, 0);
-  /*border: 5px solid darkblue;*/
+  border: 5px solid darkblue;
   box-sizing: border-box;
   margin: 0;
   width: 100vw;
@@ -26,7 +26,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   background-color: rgb(0, 0, 0);
-  /*border: 5px solid rgb(230, 1, 32);*/
+  border: 5px solid rgb(230, 1, 32);
   box-sizing: border-box;
   margin: 0;
   width: 100%;
@@ -44,7 +44,7 @@ body {
   height: 96px;
   padding: 0;
   background-color: rgb(0, 0, 0);
-  /*border: 5px solid rgb(0, 255, 110);*/
+  border: 5px solid rgb(0, 255, 110);
   box-sizing: border-box;
   
 }
@@ -68,7 +68,7 @@ body {
   position: absolute;
   text-align: inherit;
   background-color: rgb(0, 0, 0);
-  /*border: 5px solid rgb(107, 0, 194);*/
+  border: 5px solid rgb(107, 0, 194);
   box-sizing: border-box;
 }
 
@@ -94,7 +94,7 @@ body {
 }
 
 .swiper-pagination-bullet-active {
-  /*border: 5px solid rgb(255, 232, 99);*/
+  border: 5px solid rgb(255, 232, 99);
   display: inline;
 }
 
@@ -123,7 +123,7 @@ canvas {
   bottom: 0;
   width: 100%;
   transform: translate(0, 100%);
-  /*border: 5px solid rgb(1, 129, 123);*/
+  border: 5px solid rgb(1, 129, 123);
   box-sizing: border-box;
 }
 
@@ -132,7 +132,7 @@ canvas {
   top: 0;
   width: 100%;
   transform: translate(0, -100%);
-  /*border: 5px solid rgb(255, 203, 34);*/
+  border: 5px solid rgb(255, 203, 34);
   box-sizing: border-box;
 }
 
@@ -150,7 +150,7 @@ p {
   width: 100%;
   bottom: 0%;
   text-align: center;
-  /*border: 5px solid rgb(10, 1, 129);*/
+  border: 5px solid rgb(10, 1, 129);
   box-sizing: border-box;
   font-size: .7em;
 }
@@ -168,7 +168,7 @@ p {
   body {
     position: relative;
     background-color: rgb(0, 0, 0);
-    /*border: 5px solid darkblue;*/
+    border: 5px solid darkblue;
     box-sizing: border-box;
     margin: 0;
     width: 100vw;
@@ -183,7 +183,7 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(0, 0, 0);
-    /*border: 5px solid rgb(230, 1, 32);*/
+    border: 5px solid rgb(230, 1, 32);
     box-sizing: border-box;
     margin: 0;
     width: 100%;
@@ -225,7 +225,7 @@ p {
     position: absolute;
     text-align: inherit;
     background-color: rgb(0, 0, 0);
-    /*border: 5px solid rgb(107, 0, 194);*/
+    border: 5px solid rgb(107, 0, 194);
     box-sizing: border-box;
   }
   
@@ -275,7 +275,7 @@ p {
     bottom: 0;
     width: 100%;
     transform: translate(0, 100%);
-    /*border: 5px solid rgb(1, 129, 123);*/
+    border: 5px solid rgb(1, 129, 123);
     box-sizing: border-box;
   }
 
@@ -307,7 +307,7 @@ p {
     width: 100%;
     bottom: 0%;
     text-align: center;
-    /*border: 5px solid rgb(10, 1, 129);*/
+    border: 5px solid rgb(10, 1, 129);
     box-sizing: border-box;
     font-size: .7em;
   }
