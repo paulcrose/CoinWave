@@ -22,7 +22,7 @@ var swiper = new Swiper('.swiper-container', {
     pagination: {
       el: '.swiper-pagination',
       renderBullet: function (index, className) {
-        return '<div class="' + className + '"><div id="shadow' + (index + 1) + '"></div><div class="value-container"><p id="value' + (index + 1) + '"></p></div><canvas id="myChart' + (index + 1) + '"></canvas></div>';
+        return '<div class="' + className + '"><div id="shadow' + (index + 1) + '"></div><div class="value-container"><p id="value' + (index + 1) + '"></p></div><div class="percent-container"><p id="percent' + (index + 1) + '"></p></div><canvas id="myChart' + (index + 1) + '"></canvas></div>';
       },
     },
 });

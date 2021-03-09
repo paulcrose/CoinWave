@@ -36,6 +36,40 @@ async function getValues() {
     document.getElementById("value2").innerText = `$${value2}`
     document.getElementById("value3").innerText = `$${value3}`
 
+    var percent1 = ((((data[0].prices[23]) - (data[0].prices[3])) / (data[0].prices[23]))*100).toFixed(2);
+    var percent2 = ((((data[1].prices[23]) - (data[1].prices[3])) / (data[1].prices[23]))*100).toFixed(2);
+    var percent3 = ((((data[2].prices[23]) - (data[2].prices[3])) / (data[2].prices[23]))*100).toFixed(2);
+
+    var sign1; {
+        if ((data[0].prices[3])<(data[0].prices[23])) {
+            sign1 = "+";
+        } else {
+            sign1 = "-";
+        }
+    }
+    var sign2; {
+        if ((data[1].prices[3])>(data[0].prices[23])) {
+            sign2 = "+";
+        } else {
+            sign2 = "-";
+        }
+    }
+    var sign3; {
+        if ((data[2].prices[3])<(data[0].prices[23])) {
+            sign3 = "+";
+        } else {
+            sign3 = "-";
+        }
+    }
+
+    document.getElementById("percent1").innerText = `BTC 1 Day ${sign1}${percent1}%`
+    document.getElementById("percent2").innerText = `ETH 1 Day ${sign2}${percent2}%`
+    document.getElementById("percent3").innerText = `XRP 1 Day ${sign3}${percent3}%`
+
+    console.log(percent1);
+    console.log(percent2);
+    console.log(percent3);
+
     
     var lineColor;
     if ((data[0].prices[3])<(data[0].prices[23])) {
@@ -89,6 +123,7 @@ async function getValues() {
     } else {
         lineColor2 = "rgba(255,0,0,1)";
         document.getElementById("shadow2").style.boxShadow = shadow;
+        document.getElementById("percent2").style.color = "rgba(255,0,0,1)";
     }
 
     var ctx = document.getElementById('myChart2').getContext('2d');
