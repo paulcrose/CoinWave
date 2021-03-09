@@ -44,21 +44,21 @@ async function getValues() {
         if ((data[0].prices[3])<(data[0].prices[23])) {
             sign1 = "+";
         } else {
-            sign1 = "-";
+            sign1 = "";
         }
     }
     var sign2; {
-        if ((data[1].prices[3])>(data[0].prices[23])) {
+        if ((data[1].prices[3])<(data[1].prices[23])) {
             sign2 = "+";
         } else {
-            sign2 = "-";
+            sign2 = "";
         }
     }
     var sign3; {
-        if ((data[2].prices[3])<(data[0].prices[23])) {
+        if ((data[2].prices[3])<(data[2].prices[23])) {
             sign3 = "+";
         } else {
-            sign3 = "-";
+            sign3 = "";
         }
     }
 
@@ -118,7 +118,7 @@ async function getValues() {
 });
 
     var lineColor2;
-    if ((data[1].prices[3])>(data[1].prices[23])) {
+    if ((data[1].prices[3])<(data[1].prices[23])) {
         lineColor2 = "rgba(0,255,200,1)";
     } else {
         lineColor2 = "rgba(255,0,0,1)";
@@ -169,7 +169,7 @@ async function getValues() {
     } else {
         lineColor3 = "rgba(255,0,0,1)";
         document.getElementById("shadow3").style.boxShadow = shadow;
-
+        document.getElementById("percent3").style.color = "rgba(255,0,0,1)";
     }
 
 
