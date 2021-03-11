@@ -77,6 +77,7 @@ async function getValues() {
     } else {
         lineColor = "rgba(255,0,0,1)";
         document.getElementById("shadow1").style.boxShadow = shadow;
+        document.getElementById("percent1").style.color = "rgba(255,0,0,1)";
     }
 
     
