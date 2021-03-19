@@ -122,7 +122,7 @@ canvas {
   margin: 5%;
 }
 
-#shadow1, #shadow2, #shadow3 {
+#shadow1, #shadow2, #shadow3, #shadow4, #shadow5 {
   position: absolute;
   bottom: 0;
   width: 100%;
