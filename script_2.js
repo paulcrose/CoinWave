@@ -1,6 +1,6 @@
 
 
-Chart.defaults.global.legend.display = false;
+Chart.defaults.global.legend.display = true;
 Chart.defaults.scale.gridLines.display = false;
 
 const today = new Date();
@@ -113,7 +113,7 @@ async function getValues() {
     data: {
         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
         datasets: [{
-            label: '# of Votes',
+            label: 'Bitcoin',
             data: priceList1,
             borderColor: lineColor1,
             lineTension: "0",
@@ -128,6 +128,13 @@ async function getValues() {
         }]
     },
     options: {
+        legend: {
+            labels: {
+                boxWidth: 0,
+                fontSize: 18,
+                fontColor: '#01fdfe'
+            }
+        },
         aspectRatio: 1,
         scales: {
             yAxes: [{
@@ -159,7 +166,7 @@ async function getValues() {
     data: {
         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
         datasets: [{
-            label: '# of Votes',
+            label: 'Ethereum',
             data: priceList2,
             borderColor: lineColor2,
             lineTension: "0",
@@ -174,6 +181,13 @@ async function getValues() {
         }]
     },
     options: {
+        legend: {
+            labels: {
+                boxWidth: 0,
+                fontSize: 18,
+                fontColor: '#01fdfe'
+            }
+        },
         aspectRatio: 1,
         scales: {
             yAxes: [{
@@ -206,7 +220,7 @@ async function getValues() {
     data: {
         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
         datasets: [{
-            label: '# of Votes',
+            label: 'Litecoin',
             data: priceList3,
             borderColor: lineColor3,
             lineTension: "0",
@@ -221,6 +235,13 @@ async function getValues() {
         }]
     },
     options: {
+        legend: {
+            labels: {
+                boxWidth: 0,
+                fontSize: 18,
+                fontColor: '#01fdfe'
+            }
+        },
         aspectRatio: 1,
         scales: {
             yAxes: [{
@@ -252,7 +273,7 @@ type: 'line',
 data: {
     labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
     datasets: [{
-        label: '# of Votes',
+        label: 'Ripple',
         data: priceList4,
         borderColor: lineColor4,
         lineTension: "0",
@@ -267,6 +288,13 @@ data: {
     }]
 },
 options: {
+    legend: {
+        labels: {
+            boxWidth: 0,
+            fontSize: 18,
+            fontColor: '#01fdfe'
+        }
+    },
     aspectRatio: 1,
     scales: {
         yAxes: [{
@@ -299,7 +327,7 @@ var lineColor5;
     data: {
         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
         datasets: [{
-            label: '# of Votes',
+            label: 'Zcash',
             data: priceList5,
             borderColor: lineColor5,
             lineTension: "0",
@@ -314,6 +342,13 @@ var lineColor5;
         }]
     },
     options: {
+        legend: {
+            labels: {
+                boxWidth: 0,
+                fontSize: 18,
+                fontColor: '#01fdfe'
+            }
+        },
         aspectRatio: 1,
         scales: {
             yAxes: [{
