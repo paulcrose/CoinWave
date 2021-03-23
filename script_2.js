@@ -1,4 +1,4 @@
-
+window.onresize = function(){ location.reload(); }
 
 Chart.defaults.global.legend.display = true;
 Chart.defaults.scale.gridLines.display = false;
@@ -316,8 +316,8 @@ var lineColor5;
         lineColor5 = "rgba(0,255,200,1)";
     } else {
         lineColor5 = "rgba(255,0,0,1)";
-        document.getElementById("shadow1").style.boxShadow = shadow;
-        document.getElementById("percent1").style.color = "rgba(255,0,0,1)";
+        document.getElementById("shadow5").style.boxShadow = shadow;
+        document.getElementById("percent5").style.color = "rgba(255,0,0,1)";
     }
 
     
