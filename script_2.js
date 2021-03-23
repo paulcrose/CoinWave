@@ -1,4 +1,4 @@
-window.onresize = function(){ location.reload(); }
+/*window.onresize = function(){ location.reload(); }*/
 
 Chart.defaults.global.legend.display = true;
 Chart.defaults.scale.gridLines.display = false;
