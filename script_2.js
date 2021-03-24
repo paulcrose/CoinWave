@@ -1,5 +1,12 @@
 /*window.onresize = function(){ location.reload(); }*/
 
+window.addEventListener("load",function() {
+    setTimeout(function(){
+        // This hides the address bar:
+        window.scrollTo(0, 1);
+    }, 0);
+});
+
 Chart.defaults.global.legend.display = true;
 Chart.defaults.scale.gridLines.display = false;
 
