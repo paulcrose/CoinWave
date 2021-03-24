@@ -169,6 +169,7 @@ canvas {
   height: 24px;
   transform: translate(0, -46px);
   background-color: rgba(255, 0, 149, .9);
+  background-image: url(..//img/1d.svg);
   clip-path: polygon(20% 0%,100% 0%,100% 100%,0% 100%,0% 20%);
 }
 

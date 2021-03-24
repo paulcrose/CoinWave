@@ -91,11 +91,11 @@ async function getValues() {
         }
     }
 
-    document.getElementById("percent1").innerText = `1 Day ${sign1}${percent1}%`
-    document.getElementById("percent2").innerText = `1 Day ${sign2}${percent2}%`
-    document.getElementById("percent3").innerText = `1 Day ${sign3}${percent3}%`
-    document.getElementById("percent4").innerText = `1 Day ${sign4}${percent4}%`
-    document.getElementById("percent5").innerText = `1 Day ${sign5}${percent5}%`
+    document.getElementById("percent1").innerText = `${sign1}${percent1}%`
+    document.getElementById("percent2").innerText = `${sign2}${percent2}%`
+    document.getElementById("percent3").innerText = `${sign3}${percent3}%`
+    document.getElementById("percent4").innerText = `${sign4}${percent4}%`
+    document.getElementById("percent5").innerText = `${sign5}${percent5}%`
 
     console.log(percent1);
     console.log(percent2);
