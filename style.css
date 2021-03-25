@@ -32,6 +32,12 @@ body {
   max-height: 550px;
 }
 
+@supports (-webkit-touch-callout: none) {
+  .app-container {
+    margin-top: 0px;
+  }
+}
+
 .swiper-container {
   position: absolute;
   top: auto;
