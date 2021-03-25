@@ -266,7 +266,7 @@ async function getValues() {
 
 var lineColor4;
 if ((data[3].prices[3])<(data[3].prices[23])) {
-    lineColor4 = "rgba(0,255,160,1))";
+    lineColor4 = "rgba(0,255,160,1)";
 } else {
     lineColor4 = "rgba(245,0,15,1)";
     document.getElementById("shadow4").style.boxShadow = shadow;
