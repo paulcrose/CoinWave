@@ -18,7 +18,7 @@ console.log(jsonDateYesterday);
 
 const api_url_hist = "https://api.nomics.com/v1/currencies/sparkline?key=1e137867ca2750e7d2d854a3104dea88&ids=BTC,ETH,XRP,ZEC,LTC&start="+jsonDateYesterday+"&end="+jsonDateToday+""
 
-const shadow = "0 -20px 55px -15px rgba(255, 0, 15, 0.2), 0 -16px 69.3px -15px rgba(255, 0, 15, 0.3), 0 -3.9px 67.7px -15px rgba(255, 0, 15, 0.3), 0 38px 64px -15px rgba(255, 0, 15, 0.35)"
+const shadow = "0 -20px 55px -15px rgba(255, 0, 15, 0.18), 0 -16px 69.3px -15px rgba(255, 0, 15, 0.25), 0 -3.9px 67.7px -15px rgba(255, 0, 15, 0.25), 0 38px 64px -15px rgba(255, 0, 15, 0.3)"
 
 async function getValues() {
     const response = await fetch(api_url_hist);
