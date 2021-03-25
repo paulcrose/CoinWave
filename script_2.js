@@ -1,14 +1,9 @@
 /*window.onresize = function(){ location.reload(); }*/
 
-window.addEventListener("load",function() {
-    setTimeout(function(){
-        // This hides the address bar:
-        window.scrollTo(0, 1);
-    }, 0);
-});
 
 Chart.defaults.global.legend.display = true;
 Chart.defaults.scale.gridLines.display = false;
+Chart.defaults.global.defaultFontFamily = 'din-2014, sans-serif';
 
 const today = new Date();
 const yesterday = new Date();
@@ -23,7 +18,7 @@ console.log(jsonDateYesterday);
 
 const api_url_hist = "https://api.nomics.com/v1/currencies/sparkline?key=1e137867ca2750e7d2d854a3104dea88&ids=BTC,ETH,XRP,ZEC,LTC&start="+jsonDateYesterday+"&end="+jsonDateToday+""
 
-const shadow = "0 -17px 43.9px -20px rgba(255, 0, 15, 0.15), 0 -14.5px 69.3px -20px rgba(255, 0, 15, 0.20), 0 -3.9px 67.7px -20px rgba(255, 0, 15, 0.25), 0 38px 56px -20px rgba(255, 0, 15, 0.32)"
+const shadow = "0 -20px 55px -15px rgba(255, 0, 15, 0.2), 0 -16px 69.3px -15px rgba(255, 0, 15, 0.3), 0 -3.9px 67.7px -15px rgba(255, 0, 15, 0.3), 0 38px 64px -15px rgba(255, 0, 15, 0.35)"
 
 async function getValues() {
     const response = await fetch(api_url_hist);
@@ -106,11 +101,12 @@ async function getValues() {
     
     var lineColor1;
     if ((data[0].prices[3])<(data[0].prices[23])) {
-        lineColor1 = "rgba(0,255,200,1)";
+        lineColor1 = "rgba(0,255,160,1)";
     } else {
-        lineColor1 = "rgba(255,0,0,1)";
+        lineColor1 = "rgba(245,0,15,1)";
         document.getElementById("shadow1").style.boxShadow = shadow;
-        document.getElementById("percent1").style.color = "rgba(255,0,0,1)";
+        document.getElementById("percent1").style.color = "rgba(250,0,15,1)";
+        document.getElementById("percent1").style.fontWeight = "600";
     }
 
     
@@ -139,7 +135,7 @@ async function getValues() {
             labels: {
                 boxWidth: 0,
                 fontSize: 18,
-                fontColor: '#01fdfe'
+                fontColor: '#01fdfe',
             }
         },
         aspectRatio: 1,
@@ -162,9 +158,10 @@ async function getValues() {
     if ((data[1].prices[3])<(data[1].prices[23])) {
         lineColor2 = "rgba(0,255,200,1)";
     } else {
-        lineColor2 = "rgba(255,0,0,1)";
+        lineColor2 = "rgba(245,0,15,1)";
         document.getElementById("shadow2").style.boxShadow = shadow;
-        document.getElementById("percent2").style.color = "rgba(255,0,0,1)";
+        document.getElementById("percent2").style.color = "rgba(250,0,15,1)";
+        document.getElementById("percent1").style.fontWeight = "600";
     }
 
     var ctx = document.getElementById('myChart2').getContext('2d');
@@ -215,9 +212,10 @@ async function getValues() {
     if ((data[2].prices[3])<(data[2].prices[23])) {
         lineColor3 = "rgba(0,255,200,1)";
     } else {
-        lineColor3 = "rgba(255,0,0,1)";
+        lineColor3 = "rgba(245,0,15,1)";
         document.getElementById("shadow3").style.boxShadow = shadow;
-        document.getElementById("percent3").style.color = "rgba(255,0,0,1)";
+        document.getElementById("percent3").style.color = "rgba(250,0,15,1)";
+        document.getElementById("percent1").style.fontWeight = "600";
     }
 
 
@@ -269,9 +267,10 @@ var lineColor4;
 if ((data[3].prices[3])<(data[3].prices[23])) {
     lineColor4 = "rgba(0,255,200,1)";
 } else {
-    lineColor4 = "rgba(255,0,0,1)";
+    lineColor4 = "rgba(245,0,15,1)";
     document.getElementById("shadow4").style.boxShadow = shadow;
-    document.getElementById("percent4").style.color = "rgba(255,0,0,1)";
+    document.getElementById("percent4").style.color = "rgba(250,0,15,1)";
+    document.getElementById("percent1").style.fontWeight = "600";
 }
 
 var ctx = document.getElementById('myChart4').getContext('2d');
@@ -322,9 +321,10 @@ var lineColor5;
     if ((data[4].prices[3])<(data[4].prices[23])) {
         lineColor5 = "rgba(0,255,200,1)";
     } else {
-        lineColor5 = "rgba(255,0,0,1)";
+        lineColor5 = "rgba(245,0,15,1)";
         document.getElementById("shadow5").style.boxShadow = shadow;
-        document.getElementById("percent5").style.color = "rgba(255,0,0,1)";
+        document.getElementById("percent5").style.color = "rgba(250,0,15,1)";
+        document.getElementById("percent1").style.fontWeight = "600";
     }
 
     
