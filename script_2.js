@@ -13,9 +13,9 @@ document.onreadystatechange = function () {
 function whichBrowser() {
     if (isChrome()) {
         console.log("Chrome");
-        document.getElementById("app-container").style.marginTop = "64px";
     } else if (isSafari()) {
         console.log("Safari");
+        document.getElementById("app-container").style.marginTop = "24px";
     } 
 }
 
