@@ -346,11 +346,11 @@ a {
     position: absolute;
     top: 0;
     right: 0;
-    width: calc(100% - 32px);
+    width: calc(100% - 48px);
     padding-right: 16px;
     transform: translate(0, -46px);
     background-color: rgba(255, 0, 149, .25);
-    box-sizing: border-box;
+    clip-path: polygon(0% 0%, 100% 0, 100% 80%, 98% 100%, 0% 100%);
     text-align: right;
     font-weight: 400;
     line-height: 24px;
