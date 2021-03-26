@@ -1,6 +1,4 @@
 
-/*window.onresize = function(){ location.reload(); }*/
-
 
 document.onreadystatechange = function () {
     whichBrowser()
