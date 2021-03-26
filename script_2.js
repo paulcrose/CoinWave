@@ -1,6 +1,36 @@
 
 /*window.onresize = function(){ location.reload(); }*/
 
+/*function changeMargin() {
+    document.getElementById("app-container").style.backgroundColor = "rgba(0,255,0,.5)";
+    document.getElementById("app-container").style.marginTop = "8px";
+}*/
+
+document.onreadystatechange = function () {
+    whichBrowser()
+};
+
+function whichBrowser() {
+    if (isChrome()) {
+        console.log("Chrome");
+        document.getElementById("app-container").style.marginTop = "64px";
+    } else if (isSafari()) {
+        console.log("Safari");
+    } 
+}
+
+function agentHas(keyword) {
+    return navigator.userAgent.toLowerCase().search(keyword.toLowerCase()) > -1;
+}
+
+function isSafari() {
+    return (!!window.ApplePaySetupFeature || !!window.safari) && agentHas("Safari") && !agentHas("Chrome") && !agentHas("CriOS");
+}
+
+function isChrome() {
+    return agentHas("CriOS") || agentHas("Chrome") || !!window.chrome;
+}
+
 
 Chart.defaults.global.legend.display = true;
 Chart.defaults.scale.gridLines.display = false;
@@ -376,6 +406,7 @@ var lineColor5;
     }
 
 getValues();
+
 
 
 
