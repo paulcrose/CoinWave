@@ -1,10 +1,6 @@
 
 /*window.onresize = function(){ location.reload(); }*/
 
-/*function changeMargin() {
-    document.getElementById("app-container").style.backgroundColor = "rgba(0,255,0,.5)";
-    document.getElementById("app-container").style.marginTop = "8px";
-}*/
 
 document.onreadystatechange = function () {
     whichBrowser()

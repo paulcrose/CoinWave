@@ -191,10 +191,10 @@ p {
   background-color: rgba(248, 254, 71, 1);
   background-image: url(img/nomics.svg);
   clip-path: polygon(8% 0%,100% 0%,100% 100%,0% 100%,0% 25%);
-  font-size: .7em;
-  white-space: nowrap;
-  overflow: hidden;
-  color: black;
+}
+
+a {
+  font-size: 0;
 }
 
 }
