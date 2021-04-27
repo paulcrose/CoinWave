@@ -9,7 +9,7 @@ function whichBrowser() {
         console.log("Chrome");
     } else if (isSafari()) {
         console.log("Safari");
-        document.getElementById("app-container").style.marginTop = "64px";
+        document.getElementById("app-container").style.marginTop = "24px";
     } 
 }
 
