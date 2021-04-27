@@ -1,31 +1,4 @@
 
-
-document.onreadystatechange = function () {
-    whichBrowser()
-};
-
-function whichBrowser() {
-    if (isChrome()) {
-        console.log("Chrome");
-    } else if (isSafari()) {
-        console.log("Safari");
-        document.getElementById("app-container").style.marginTop = "24px";
-    } 
-}
-
-function agentHas(keyword) {
-    return navigator.userAgent.toLowerCase().search(keyword.toLowerCase()) > -1;
-}
-
-function isSafari() {
-    return (!!window.ApplePaySetupFeature || !!window.safari) && agentHas("Safari") && !agentHas("Chrome") && !agentHas("CriOS");
-}
-
-function isChrome() {
-    return agentHas("CriOS") || agentHas("Chrome") || !!window.chrome;
-}
-
-
 Chart.defaults.global.legend.display = true;
 Chart.defaults.scale.gridLines.display = false;
 Chart.defaults.global.defaultFontFamily = 'din-2014, sans-serif';
